@@ -1,0 +1,18 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+Host icarus
+ServerAliveInterval 60
+Hostname 10.10.10.76
+Port 22
+User jdoe
+
+Host daedalus
+Hostname 10.10.10.88
+Port 65000
+User duser
+
+Host dragon
+Hostname 10.10.10.99
+Port 22
+User jdoe

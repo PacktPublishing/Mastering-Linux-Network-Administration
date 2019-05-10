@@ -1,0 +1,10 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName tryadtech.com
+        DocumentRoot /var/www/tryadtech.com/html
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

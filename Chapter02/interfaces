@@ -1,0 +1,15 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Wired connection eth0
+auto eth0
+iface eth0 inet static
+	address 10.10.10.12
+	netmask 255.255.248.0
+	network 10.10.10.0
+	broadcast 10.10.10.255
+	gateway 10.10.10.1

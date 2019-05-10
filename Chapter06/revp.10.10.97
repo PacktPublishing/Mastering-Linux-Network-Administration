@@ -1,0 +1,16 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+$TTL 1D
+@ IN SOA hermes.local.lan. hostmaster.local.lan. (
+201507261 ; serial
+28800 ; refresh (8 hours)
+14400 ; retry (4 hours)
+2419200 ; expire (4 weeks)
+86400 ; minimum (1 day)
+)
+;
+@ NS hermes.local.lan.
+1	PTR	hermes.local.lan.
+3   	PTR 	nagios.local.lan.
+4   	PTR 	galaxy.local.lan.

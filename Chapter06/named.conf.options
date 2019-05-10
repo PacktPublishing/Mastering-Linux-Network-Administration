@@ -1,0 +1,8 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+options {
+	forwarders {
+		8.8.8.8; 8.8.4.4;
+	};
+};

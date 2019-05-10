@@ -1,0 +1,22 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+zone "local.lan" IN {
+	type master; file "/etc/bind/net.local.lan";
+};
+
+zone "96.10.10.in-appr.arpa" {
+	type master; notify no; file "/etc/bind/revp.10.10.96";
+};
+
+zone "97.10.10.in-appr.arpa" {
+        type master; notify no; file "/etc/bind/revp.10.10.97";
+};
+
+zone "98.10.10.in-appr.arpa" {
+        type master; notify no; file "/etc/bind/revp.10.10.98";
+};
+
+zone "99.10.10.in-appr.arpa" {
+        type master; notify no; file "/etc/bind/revp.10.10.99";
+};

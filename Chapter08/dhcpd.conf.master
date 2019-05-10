@@ -1,0 +1,29 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+default-lease-time 86400;
+max-lease-time 86400;
+option subnet-mask 255.255.252.0;
+option broadcast-address 10.10.99.255;
+option domain-name "local.lan";
+authoritative;
+failover peer "dhcp-failover" {
+	primary; 
+	address 10.10.96.2;
+	port 647;
+	peer address 10.10.96.1;
+	peer port 647;
+	max-response-delay 60;
+	max-unacked-updates 10;
+	load balance max seconds 3;
+	mclt 3600;
+	split 128;
+}
+subnet 10.10.96.0 netmask 255.255.252.0 {
+	option routers 10.10.96.1;
+	option domain-name-servers 10.10.96.1;
+	pool {
+		failover peer "dhcp-failover";
+		range 10.10.99.100 10.10.99.254;
+	}
+}

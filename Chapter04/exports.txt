@@ -1,0 +1,7 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+/exports *(ro,fsid=0)
+/exports/docs 10.10.10.0/24(ro,no_subtree_check)
+/exports/images 10.10.10.0/24(rw,no_subtree_check)
+/exports/downloads 10.10.10.0/24(rw,no_subtree_check)

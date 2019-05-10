@@ -1,0 +1,10 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+[ssh]
+enabled  = true
+port     = 65256
+filter   = sshd
+action   = iptables[name=SSH, port=65256, protocol=tcp]
+logpath  = /var/log/auth.log
+maxretry = 6 

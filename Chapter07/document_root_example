@@ -1,0 +1,13 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+<Directory />
+    AllowOverride none
+    Require all denied
+</Directory>
+
+<Directory "/var/www/html">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>

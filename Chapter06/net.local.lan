@@ -1,0 +1,28 @@
+# Note: This file serves as an example only.
+# Ensure the values contained within match what's required for your environment.
+
+;
+; dns zone for for local.lan
+;
+
+$TTL 1D
+
+@ IN SOA local.lan. hostmaster.local.lan. (
+
+201507261 ; serial
+
+8H ; refresh
+4H ; retry
+4W ; expire
+1D ) ; minimum
+IN A 10.10.96.1
+;
+@ IN NS hermes.local.lan.
+ceres	    	IN  	A   10.10.98.1
+euphoria    	IN  	A   10.10.97.4
+galaxy      	IN  	A   10.10.96.4
+hermes	    	IN  	A   10.10.96.1
+puppet      CNAME galaxy
+;
+; dns zone for for local.lan
+;
