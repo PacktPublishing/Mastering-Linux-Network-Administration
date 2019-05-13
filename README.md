@@ -10,13 +10,13 @@ This is the code repository for [Mastering Linux Network Administration](https:/
 Linux is everywhere. Whether you run a home office, a small business, or manage enterprise systems, Linux can empower your network to perform at its very best. Armed with the advanced tools and best practice guidance of this practical guide, you'll be able to mold Linux networks to your will, empowering your systems and their users to take advantage of all that Linux-based networks have to offer.
 
 This book covers the following exciting features:
-Install and configure the Debian and CentOS systems 
-Set up and configure file servers 
-Administer networked nodes remotely 
-Discover how to monitor system performance for peak health 
-Configure network services such as DNS and DHCP 
-Host HTTP content via Apache 
-Troubleshoot Linux networking issues 
+* Install and configure the Debian and CentOS systems 
+* Set up and configure file servers 
+* Administer networked nodes remotely 
+* Discover how to monitor system performance for peak health 
+* Configure network services such as DNS and DHCP 
+* Host HTTP content via Apache 
+* Troubleshoot Linux networking issues 
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1784399590) today!
 
